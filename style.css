@@ -32,3 +32,74 @@ div{
     text-align: center;
     font-weight: 00;
 }
+.caixa1{
+    border: 5px solid blue; /*borda solida = completa*/
+    background-color: cornflowerblue;
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+    font-size: x-large;
+    border-radius: 50px; /*borda radius = vai mexer nos cantos da borda*/
+}
+.caixa2{
+    border: 5px dashed saddlebrown; /*borda dashed = pontilhada*/
+    background-color: darksalmon;/*cor da caixa*/
+    margin-top: 50px;/*faz com que haja um espaçamento*/
+    margin-right: 51px; /*faz com que o quadrado vá para direita*/
+    margin-bottom: 30px;/*distâcia de baixo*/
+    margin-left: 35px; /*faz com que o quadrado vá para esquerdar*/
+    padding: 50px;
+    text-align: center;
+    font-size: x-large;
+}
+#mar{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.exibicao-block{
+    display: block;
+    background-color: darkolivegreen;
+    margin-bottom: 20px;
+}
+.exibicao-inline{
+    display: inline;
+    background-color: aquamarine;
+    margin-right: 20px;
+    
+}
+.exibicao-inline-block{
+    display: inline-block;
+    background-color: blueviolet;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+.overflow-visible{
+    width: 200px;
+    height: 60px;
+    background-color: darkseagreen;
+    margin-bottom: 10px;
+    overflow: visible;/*conteúdo que ultrapassar fica visível*/
+}
+.overflow-hidden{
+    width: 200px;
+    height: 60px;
+    background-color: darkgreen;
+    margin-bottom: 10px;
+    overflow: hidden;/*corte do conteúdo excendente*/
+}
+.overflow-scroll{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(82, 228, 167);
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+#marg{
+    text-align: center;
+    color: rgb(2, 2, 2);
+}
+#marge{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
