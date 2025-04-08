@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .copo{
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .topado{
+            background-color: rgb(228, 92, 92);
+            padding: 10px;
+        }
+        .menu{
+            display: flex;
+            justify-content: left;
+            
+        }
+        .menu ul{
+            color: aliceblue;
+            padding: 10px;
+            transition: background 0.2s;
+        }
+        .menu ul:hover{
+            background-color: rgb(216, 123, 123);
+        }
+        .rodar{
+            position: fixed;
+            bottom: 0;  /*fixa na parte de baixo*/
+            left: 0;   /*Inicia no canto esquerdo*/
+            width: 100%;  /*ocupa toda  a larura da tela*/
+            background: rgb(228, 92, 92);
+            color: aliceblue;
+            text-align: center;
+            padding: 15px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .titulo{
+            text-align: center;
+        }
+        .rosa{
+            color: rgb(228, 92, 92);
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body class="copo">
+    <header class="topado">
+        <nav class="menu">
+            <ul>
+                <li>Início</li>
+                <li>Sobre</li>
+                <li>Serviços</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="titulo">
+    <h1>LineLifes</h1>
+    <span class="rosa"><p>Um pouco sobre a minha vida entre linhas</p></span>
+</main>
+
+    <div class="container">
+        <p>Tenho vivido triste ultimamente, meu namorado me abandounou e me deixou sólitaria, sem ninguém, sozinha e deprimida</p>
+        <p>Ele viajou para o RJ, e não me levou, um absurdo</p>
+        <p>O minímo que ele pode fazer é trazer o cristo redentor para mim, e passar para o meu nome</p>
+    </div>
+
+    <footer class="rodar">
+        &copy; 2025
+    </footer>
+</body>
+</html>
