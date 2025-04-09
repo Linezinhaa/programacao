@@ -10,21 +10,24 @@
             margin: 0;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .topado{
-            background-color: rgb(228, 92, 92);
-            padding: 10px;
-        }
         .menu{
-            display: flex;
-            justify-content: left;
+        width: 200px;
+        background-color: rgb(228, 92, 92);
+        padding-top: 20px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
             
         }
-        .menu ul{
-            color: aliceblue;
-            padding: 10px;
-            transition: background 0.2s;
+        .menu a{
+          display: block;
+          color: aliceblue;
+          padding: 14px 20px;
+          text-decoration: none;
+          border-bottom: 1px solid rgb(216, 123, 123);
         }
-        .menu ul:hover{
+        .menu a:hover{
             background-color: rgb(216, 123, 123);
         }
         .rodar{
@@ -38,32 +41,30 @@
             padding: 15px;
         }
         .container{
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
             text-align: center;
+            margin-left: 220px;
+            padding: 20px;
         }
+        
         .titulo{
             text-align: center;
+            margin-left: 220px;
+            padding: 20px;
         }
         .rosa{
             color: rgb(228, 92, 92);
             font-style: italic;
         }
-        
+       
     </style>
 </head>
 <body class="copo">
-    <header class="topado">
         <nav class="menu">
-            <ul>
-                <li>Início</li>
-                <li>Sobre</li>
-                <li>Serviços</li>
-                <li>Contato</li>
-            </ul>
+            <a href="#">Início</a>  
+            <a href="#">Sobre</a> 
+            <a href="#">Serviços</a> 
+            <a href="#">Contato</a>  
         </nav>
-    </header>
 
 <main class="titulo">
     <h1>LineLifes</h1>
