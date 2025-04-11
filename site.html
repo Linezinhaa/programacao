@@ -5,19 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
     <style>
-        .cabecalho{}
-        .cabeca{}
+        /* '*' muda tudo*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: E8EFCF;
+            color:#b1651e;
+        }
+        header{
+            background-color: #DBA979; 
+            padding: 10px 0;
+        }
+        header nav ul{
+            list-style: none;
+            text-align: center;
+        }
+        header nav ul li{
+            display: inline-block;
+            margin: 0 20px;
+        }
+        header nav ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 19px;
+        }
+        header nav ul li a:hover{
+            color: #b1651e;
+        }
+        /* Estilização do início*/
+        .ini-section{
+            text-align: center;
+            color:#b1651e; ;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .ini-section h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .ini-section p{
+            font-size: 25px;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        .cta-button{
+            background-color: #DBA979;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.5s;
+        }
+        .cta-button:hover{
+            background-color: #b1651e;
+        }
+
+
+        /*Estilização do Sobre*/
+        .sobre-section{
+            background-color: #ECCA9C;
+            padding: 50px 20px;
+            text-align: center;
+
+        }
+        .sobre-section h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+        .sobre-section p{
+            font-size: 18px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+        }
+     
+
     </style>
+
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabeca">
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
+    <header>
+        <nav class="cabe">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    
+    <!-- Sessão de Início-->
+    <!--Para algo específico, e o class é para algo genérico-->
+    <section id="inicio" class="ini-section">
+        <h1>Seja bem vindo ao nosso site Provedor de Código</h1>
+        <p>Códigos confiáveis para você!</p>
+        <a href="" class="cta-button"> Conheça nosso planos</a>
+    </section>
+
+    <!--Sessão de Sobre-->
+    <section id="sobre" class="sobre-section">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma classe dedicada ao aprendizado, com foco prático de atividades.</p>
+        <p>Estamos até fazendo o nosso site!!</p>
+    </section>
+
 </body>
 </html>
