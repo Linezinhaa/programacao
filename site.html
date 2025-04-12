@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
     <style>
+
+
+
         /* '*' muda tudo*/
         *{
             margin: 0;
@@ -13,7 +16,7 @@
         }
         body{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: E8EFCF;
+            background-color: #e8efcfbb;
             color:#b1651e;
         }
         header{
@@ -36,11 +39,14 @@
         header nav ul li a:hover{
             color: #b1651e;
         }
+
+
+
         /* Estilização do início*/
         .ini-section{
             text-align: center;
             color:#b1651e; ;
-            height: 60vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -70,10 +76,12 @@
         }
 
 
+
+
         /*Estilização do Sobre*/
         .sobre-section{
             background-color: #ECCA9C;
-            padding: 50px 20px;
+            padding: 160px 40px;
             text-align: center;
 
         }
@@ -89,19 +97,123 @@
             margin: 0 auto 20px auto;
             line-height: 1.5;
         }
-     
+
+
+
+
+        /* Sessão de serviços */
+        #servicos{
+            background-color: #E8EFCF;
+            text-align: center;
+            padding: 160px 20px;
+            color: #b1651e;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card{
+            background-color: #DBA979;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 4px 8px #b1651e;
+            cursor: pointer;
+            transition: transform 0.5s;
+            margin-top: 50px;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px #b1651e;
+            background-color: #b1651e;
+        }
+        .card h3{
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+        .card p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .preco{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #servicos h2{
+            font-size: 35px;
+        }
+
+
+        /* Sessão de contato */
+        #contato{
+            background-color: #b1651e;
+            color:#ffffff;
+            text-align: center;
+            padding: 80px 20px;   
+        }
+        #contato h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .contato-form{
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contato-form label{
+            display: block;
+            margin-bottom:10px ;
+        }
+        .contato-form input, .contato-form textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contato-form button{
+            background-color: #DBA979;
+            color: #E8EFCF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .contato-form button:hover{
+            background-color: saddlebrown;
+
+        }
+
+        .rodape{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E8EFCF;
+            color: #b1651e;
+            text-align: center;
+            padding: 15px;
+        }
 
     </style>
 
 </head>
+
+
+
+
+
 <body>
     <header>
         <nav class="cabe">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -116,9 +228,55 @@
     <!--Sessão de Sobre-->
     <section id="sobre" class="sobre-section">
         <h2>Sobre Nós</h2>
-        <p>Somos uma classe dedicada ao aprendizado, com foco prático de atividades.</p>
-        <p>Estamos até fazendo o nosso site!!</p>
+        <p>Somos uma classe dedicada ao aprendizado, com foco prático de atividades. Com auxílio de nosso professor Diego.</p>
+        <p>Estamos até fazendo o nosso site!! Nosso primeiro feito nessa jornada no curso.</p>
+        <p>Daqui pra frente desejamos se tornar programadores profissionais e ter uma longa carreira.</p>
     </section>
+
+    <!--Sessão de serviços-->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Plano Básico</h3>
+                <p>Ideal para seu bolso!</p>
+                <p class="preco">R$19,99</p>                                      
+            </div>
+            <div class="card">
+                <h3>Plano Intermediário</h3>
+                <p>Ideal para seu bolso!</p>
+                <p class="preco">R$39,99</p>                                      
+            </div>
+            <div class="card">
+                <h3>Plano Plus</h3>
+                <p>Ideal para seu bolso!</p>
+                <p class="preco">R$69,99</p>                                      
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de contato -->
+     <section id="contato">
+        <h2>Entre em contato!!</h2>
+        <p>Preencha o formulário abaixo:</p>
+
+        <form class="contato-form">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="E-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea  rows="5" placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+     </section>
+
+     <footer class="rodape">
+        &copy; Tenha uma ótima experiência em nosso site!!
+     </footer>
 
 </body>
 </html>
