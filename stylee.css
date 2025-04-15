@@ -1,0 +1,23 @@
+header  {
+    color:red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
+}
+
+.bradesco p {
+    background-color: red;
+    padding: 50px;
+    border-radius: 50px;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.bradesco h2{
+    text-align: center;
+}
+
+.brades{
+   
+    text-align: center;
+}
