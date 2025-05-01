@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota = [6, 7.5, 8, 9, 10];
+        let i = 0;
+        let soma = 0;
+
+        while (i < nota.length){
+            soma+= nota[i];
+            i++;
+        }
+
+        let media = soma / nota.length
+        
+        if (media >= 7){
+            console.log("Turma acima da média");
+        }
+        else{
+            console.log("Turma abaixo da média");
+        }
+
+    </script>
+</body>
+</html>
