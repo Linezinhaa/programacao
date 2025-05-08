@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<H2>Selecione sua presilha:</H2>
+
+    <select id="produto" onchange="atualizarPreco()">
+        <option value="45">Preto - R$45,00</option>
+        <option value="40">Marrom - R$40,00</option>
+        <option value="50">Bege - R$50,00</option>
+        <option value="48">Cinza - R$48,00</option>
+        <option value="55">Branca - R$55,00</option>
+    </select>
+    <p>Você selecionou -> <span id="resultadoPreco">45</span>,00 </p>
+
+    <script>
+        function atualizarPreco(){
+            let valor = document.getElementById('produto').value
+            let preco = document.getElementById('resultadoPreco')
+            preco.textContent = valor;
+        }
+    </script>
+</body>
+</html>
