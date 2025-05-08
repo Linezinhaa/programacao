@@ -6,17 +6,24 @@
     <title>Blog</title>
 </head>
 <body>
-    <h2>Viagem com meu namorado</h2>
-
-    <select id="titulo">
-        
-    </select>
-
+    <h2 id="tituloPostagem">Viagem com meu namorado</h2>
+    <button onclick="alterarTitulo()">Clique para alterar!</button>
 
     <script>
+
+        let tituloOriginal = "Viagem com meu namorado";
+        let tituloAlterado = "Viagem a dois <3"
+
         function alterarTitulo(){
-            let 
-            button 
+            let titulo = document.getElementById("tituloPostagem");
+
+
+            if(titulo.textContent == tituloOriginal){
+                titulo.textContent = tituloAlterado;
+            }else {
+                titulo.textContent = tituloOriginal;
+            }
+        
         }
     </script>
 </body>
