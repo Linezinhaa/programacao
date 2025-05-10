@@ -8,21 +8,19 @@
 <body>
 
     <h1 id="Bemvindo">Bem-vindo!!</h1>
-
-    <form class="contato-form">
-        <label for="nome">Nome:</label>
-        <input type="text" placeholder="Seu nome" required>
-    </form>
+    <input type="text" id="nomeUsuario" placeholder="Seu nome" required>
+    <button onclick="atualizarCaixa()">Enviar</button>
+    <p id="mensagemDeBoasvindas"></p>
     <p>
-    <button>Enviar</button>
 
 
     <script>
-        let mensagem = "Bem-vindo!!"
-        let mensagemAlterada = "Bem-vindo",nome
 
-        function alterarBemvindo(){
-            let titulo = document.getElementById("Bemvindo");
+        function atualizarCaixa(){
+            let nome = document.getElementById("nomeUsuario").value
+            let mensagem = document.getElementById ('mensagemDeBoasvindas')
+
+            mensagem.textContent = 'Bem vindo,' + nome + ".";
 
         }
     </script>
