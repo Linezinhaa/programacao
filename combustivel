@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    let distancia = parseFloat(prompt("Digite a distancia percorrida"))
+    let consumo = parseFloat(prompt("Digite o consumo total"))
+
+    function calcularConsumo (distancia, consumo) {
+        return distancia / consumo
+
+}
+console.log("a Distancia informada foi de:" + distancia +"o consumo informado foi de:"
++ consumo + ". sendo, a assim, a media foi de: " + calcularConsumo (distancia, consumo))
+
+</script>
+
+</body>
+</html>
