@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="Butao">Enviar</button>
+    <button id="2x">Enviar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        let BotaoEnviar = document.getElementById('mensagem')
+        let mensagemReal = document.getElementById('Butao');
+        let mensagemRealReal = document.getElementById('2x')
+
+        mensagemReal.addEventListener('click', function(){
+                BotaoEnviar.textContent = 'Clique realizado'
+        })
+
+         mensagemRealReal.addEventListener('dblclick', function(){
+                BotaoEnviar.textContent = 'Duplo clique realizado'
+        })
+
+        
+    </script>
+
+</body>
+</html>
