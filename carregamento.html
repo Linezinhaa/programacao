@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #caixa{
+            width: 450px;
+            height: 30px;
+            border: 2px solid rgb(221, 153, 164);
+            margin: 0 auto;
+            background-color: rgb(211, 165, 180);
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Carregando...</h1>
+    <div id="caixa"></div>
+
+    <script>
+
+    let posicao = 0
+    let caixa = document.getElementById('caixa')
+
+    let intervalo = setInterval(()=>{
+            posicao += 1
+            caixa.style.width = posicao + '%'
+
+            if(posicao >= 35){
+                clearInterval(intervalo)
+                alert("Carregamento completo!!")
+            }
+        },100)
+       
+    </script>
+
+</body>
+</html>
+
+ 
+    
