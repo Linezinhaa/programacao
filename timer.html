@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Timer</h1>
+    <input type="number" id="tempo" placeholder="Digite o tempo em segundos">
+    <button id="iniciar">Iniciar Time</button>
+    <h2>Tempo restante: <span id="contador">0</span></h2>
+
+    <script>
+
+        document.getElementById('iniciar').addEventListener('click', () =>{
+        let  tempo = document.getElementById('tempo').value
+        let contador = tempo
+
+        let intervalo = setInterval(()=> {
+            document.getElementById('contador').textContent = contador
+            contador --;
+            if (contador < 0){
+                clearInterval(intervalo);
+                alert("Tempo esgotado!!")
+            }
+        },1000)
+
+    })
+    </script>
+
+</body>
+</html>
