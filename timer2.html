@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mensagem{
+            color: fuchsia;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Alarme</h1>
+    <button id="lembrete">Começar</button>
+    <p id="mensagem"></p>
+
+    <h2>Contador: <span id="contador"></span></h2>
+
+    <script>
+        let contador = 5
+        
+        document.getElementById('lembrete').addEventListener('click', ()=>{
+            let intervalo = setInterval(()=>{
+                document.getElementById('contador').textContent = contador 
+                contador--;
+                if(contador < 0){
+                    clearInterval(intervalo)
+                    document.getElementById('mensagem').textContent = "Acabou, que pena!"
+                }
+            },1000)
+        })
+    </script>
+
+</body>
+</html>

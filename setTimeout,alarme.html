@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Agenda eletrônica</h1>
+    <button id="boto">Lembrar Compromisso</button>
+    <p id="text"></p>
+
+    <script>
+         document.getElementById('boto').addEventListener('click', function(){
+            setTimeout(()=>{
+                document.getElementById('text').textContent = "Compromisso!!!!!!"
+            },5000)
+        })
+        document.getElementById('boto').addEventListener('click', ()=>{
+            let tempo = document.getElementById('boto').value
+            let contador = tempo
+
+            let intervalo = setInterval(()=>{
+                document.getElementById('contador').textContent = contador
+              contador --;
+              if (contador < 0){
+                clearInterval(intervalo);
+        }})
+        })
+    </script>
+    
+</body>
+</html>

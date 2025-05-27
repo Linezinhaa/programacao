@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .semaforo{
+            width: 60px;
+            height: 180px;
+            background-color: rgb(46, 44, 44);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column
+        }
+        .luz{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: auto;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+
+        .verde{
+            background-color: green;
+        }
+        button{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="semaforo">
+
+        <div id="vermelho" class="luz"></div>
+        <div id="amarelo" class="luz"></div>
+        <div id="verde" class="luz"></div>
+    </div>
+    <button id="btn-iniciar">Iniciar!</button>
+
+
+    <script>
+        const luzVermelho = document.getElementById('vermelho')
+        const luzAmarelo = document.getElementById('amarelo')
+        const luzVerde = document.getElementById('verde')
+
+        function apagarTodas(){
+            luzVermelho.className = 'luz'
+            luzAmarelo.className = 'luz'
+            luzVerde.className = 'luz'
+        }
+
+        document.getElementById('btn-iniciar').addEventListener('click',()=>{
+            apagarTodas();
+            luzVerde.classList.add('verde')
+
+            setTimeout(()=>{
+                apagarTodas();
+                luzAmarelo.classList.add('amarelo')
+            },2000)
+
+            setTimeout(()=>{
+                apagarTodas();
+                luzVermelho.classList.add('vermelho')
+            },3000)
+        })
+
+        function repeticao(){
+            
+        }
+
+    </script>
+
+
+</body>
+</html>
